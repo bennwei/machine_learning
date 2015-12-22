@@ -10,7 +10,7 @@ import numpy as np
 
 
 # import numpy as np
-# import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt,
 # plt.ioff()
 
 def prettyPicture(clf, X_test, y_test):
@@ -22,7 +22,7 @@ def prettyPicture(clf, X_test, y_test):
     # Plot the decision boundary. For that, we will assign a color to each
     # point in the mesh [x_min, m_max]x[y_min, y_max].
     h = .01  # step size in the mesh
-    xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arannge(y_min, y_max, h))
     Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
 
     # Put the result into a color plot
